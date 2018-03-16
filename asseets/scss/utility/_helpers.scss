@@ -1,0 +1,32 @@
+/*-- MARGIN BOTTOM AND BOTTOM --*/
+$i: 6;
+@while $i > 0 {
+    .mt-#{$i * 5} {
+        margin-top: 5px * $i;
+    }
+    .mb-#{$i * 5} {
+        margin-bottom: 5px * $i;
+    }
+    $i: $i - 1;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+/*-- FONT SIZE --*/
+$i: 6;
+@while $i > 0 {
+    .fs-#{$i * 5} {
+        font-size: 5px * $i !important;
+
+        @media (max-width: 767px) {
+            font-size: (5px * $i) - (2px * $i) !important;
+        }
+    }
+    $i: $i - 1;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}

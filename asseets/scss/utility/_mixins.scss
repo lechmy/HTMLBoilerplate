@@ -1,0 +1,58 @@
+
+@mixin transition($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+}
+
+@mixin transform($property) {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+}
+
+@mixin calc($property, $value) {
+    #{$property}: -moz-calc(#{$value});
+    #{$property}: -webkit-calc(#{$value});
+    #{$property}: calc(#{$value});
+}
+
+@mixin input-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+}
+
+@mixin user-select {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin no-effect($color: inherit) {
+    &:hover, &:active, &:focus, &:focus:active {
+        outline: none;
+        color: $color;
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+

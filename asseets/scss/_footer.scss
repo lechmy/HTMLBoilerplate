@@ -1,0 +1,33 @@
+footer {
+    padding: 20px 0px;
+    border-top: 1px solid $primary;
+    background-color: $gray;
+    color: $primary;
+
+    p {
+        margin: 0px;
+        font-size: 14px;
+        @media (max-width: 767px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    a {
+        color: $primary;
+        font-size: 14px;
+
+        @media (max-width: 767px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .fa {
+        margin: 0px 2px;
+    }
+}
