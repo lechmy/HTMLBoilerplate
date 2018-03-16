@@ -27,6 +27,8 @@
         &:before {
             content: "";
             position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
             left: -$unit;
             width: $unit;
             height: $unit;
@@ -42,16 +44,17 @@
             content: "";
             display: none;
             position: absolute;
+            top: 50%;
             left: -($unit / 2) - ($unit / 6);
-            top: ($unit / 1.6) / 6;
             width: $unit / 3;
             height: $unit / 1.6;
+            margin-top: -(($unit / 1.6) / 4);
             border-color: $foreground;
             border-style: solid;
             border-width: 0px;
             border-bottom-width: 2px;
             border-right-width: 2px;
-            @include transform(rotate(45deg));
+            @include transform((rotate(45deg) translate(-50%, -25%)));
         }
     }
 

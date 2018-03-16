@@ -10,6 +10,7 @@
     -webkit-backface-visibility: hidden;
     -webkit-transform: $property;
     -ms-transform: $property;
+    -o-transition: $property;
     transform: $property;
 }
 
@@ -20,8 +21,8 @@
 }
 
 @mixin calc($property, $value) {
-    #{$property}: -moz-calc(#{$value});
     #{$property}: -webkit-calc(#{$value});
+    #{$property}: -moz-calc(#{$value});
     #{$property}: calc(#{$value});
 }
 
@@ -40,7 +41,7 @@
     }
 }
 
-@mixin user-select {
+@mixin no-select {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
