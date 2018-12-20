@@ -1,0 +1,9 @@
+// Global library overides
+
+// SLICK
+// ------------------------------
+.slick-slide{
+    &:focus{
+        outline: none;
+    }
+}

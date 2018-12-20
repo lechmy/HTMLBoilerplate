@@ -4,13 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/asseets/scss/main.css">
+    <title>Boilerplate</title>
+    <link rel="stylesheet" href="./asseets/scss/main.css">
 </head>
 <body>
-    <header></header>
-    <section class="main"></section>
-    <footer></footer>
-    <script src="/asseets/js/main.js"></script>
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./asseets/images/logo.png" alt="Logo">
+        </a>
+        <button class="btn-menu">
+            <span>doraditi</span>
+            <span class="sign"></span>
+        </button>
+        <nav>
+            <a href="javascript:;">Link 1</a>
+            <a href="javascript:;">Link 2</a>
+            <a href="javascript:;">Link 3</a>
+        </nav>
+    </header>
+    <section class="main">
+        <!---------------------------------------------------------------------------------------------->
+        <div class="example-page">
+            <h1 class="title">HTML Boilerplate examples</h1>
+            <div class="examplebox">
+                <p>Buttons</p>
+                <button class="btn-regular">Regular</button>
+                <button class="btn-regular-alt">Regular alt</button>
+                <button class="btn-white">White</button>
+                <code>
+<button class="btn-regular">Regular</button>
+<button class="btn-regular-alt">Regular alt</button>
+<button class="btn-white">White</button>
+                </code>
+            </div>
+            <div class="examplebox">
+                <p>Inputfields</p>
+                <div class="inputgroup">
+                    <label for="input1">Label</label>
+                    <input id="inpur1" type="text" placeholder="Some text ...">
+                </div>
+                <div class="inputgroup">
+                    <label for="input2">Label</label>
+                    <textarea id="inpur2"></textarea>
+                </div>
+                <code>
+<div class="inputgroup">
+    <label for="input1">Label</label>
+    <input id="inpur1" type="text" placeholder="Some text ...">
+</div>
+<div class="inputgroup">
+    <label for="input2">Label</label>
+    <textarea id="inpur2"></textarea>
+</div>
+                </code>
+            </div>
+            <div class="examplebox">
+                <p>Checkbox</p>
+                <div class="checkbox">
+                    <input id="checkbox1" type="checkbox">
+                    <label for="checkbox1">Checkbox 1</label>
+                </div>
+                <code>
+<div class="checkbox">
+    <input id="checkbox1" type="checkbox">
+    <label for="checkbox1">Checkbox 1</label>
+</div>
+                </code>
+            </div>
+            <div class="examplebox">
+                <p>File upload</p>
+                <div class="file-upload">
+                    <input id="fle1" type="file">
+                    <button class="btn-regular">File</button>
+                </div>
+                <code>
+<div class="file-upload">
+    <input id="fle1" type="file">
+    <button class="btn-regular">File</button>
+</div>
+                </code>
+            </div>
+            <div class="examplebox">
+                <p>Loader</p>
+                <div class="loader-container">
+                    <div class="loader show"></div>
+                </div>
+                <code>
+<div class="loader-container">
+    <div class="loader show"></div>
+</div>
+                </code>
+            </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+    </section>
+    <footer>
+        <p>Footer paragraf</p>
+        <a href="javascript:;">Footer link</a>
+    </footer>
+    <script src="./asseets/plugins/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./asseets/js/main.js"></script>
+    <script src="./asseets/js/components/example-code-parser.js"></script>
 </body>
 </html>

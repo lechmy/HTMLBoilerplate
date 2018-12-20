@@ -3,6 +3,7 @@ footer {
     border-top: 1px solid $primary;
     background-color: $gray;
     color: $primary;
+    text-align: center;
 
     p {
         margin: 0px;
@@ -23,11 +24,7 @@ footer {
         }
 
         &:hover {
-            color: $primary;
+            color: $primary-dark;
         }
-    }
-
-    .fa {
-        margin: 0px 2px;
     }
 }

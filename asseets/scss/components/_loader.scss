@@ -1,0 +1,40 @@
+.loader {        
+    $unit: 30px;
+    $foreground: $primary;
+    $background: $gray;
+
+    display: none;
+    position: absolute;
+    top: calc(50% - (#{$unit} / 2));
+    left: calc(50% - (#{$unit} / 2));
+    width: $unit;
+    height: $unit;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $background;
+    border-radius: 50%;
+    border-top-color: $foreground;
+    animation: rotate 1s infinite;
+    
+    &.show {
+        display: block;
+    }
+}
+
+.loader-container {
+    $unit: 30px;
+    position: relative;
+    min-height: $unit;
+
+}
+
+@keyframes rotate{
+    0%{
+        @include transform(rotate(0deg));
+    }
+    100% {
+        @include transform(rotate(359deg));
+    }
+}
+    
+    

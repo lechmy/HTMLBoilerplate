@@ -1,0 +1,15 @@
+$font-path: '../fonts';
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url('#{$font-path}/RobotoCondensed/RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url('#{$font-path}/RobotoCondensed/RobotoCondensed-Bold.ttf');
+}

@@ -1,8 +1,9 @@
 .checkbox {
     $unit: 30px;
-    $disabled: #eee;
-    $foreground: #ff9900;
-    $background: #fff;
+    $disabled: $gray;
+    $foreground: $primary;
+    $background: $white;
+    
     margin: 0px;
     padding: 0px;
 
@@ -22,7 +23,7 @@
         font-size: 18px;
         line-height: $unit;
         cursor: pointer;
-        @include user-select;
+        @include no-select;
 
         &:before {
             content: "";

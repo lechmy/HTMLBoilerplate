@@ -1,0 +1,47 @@
+%inputfield {
+    display: block;
+    width: 100%;
+    padding: 8px 18px;
+    border: none;
+    border-bottom: 2px solid $gray-dark;
+    border-radius: 2px;
+    background-color: $gray;
+    color: $black;
+    font-size: 16px;
+    line-height: 23px;
+    @include transition(border $time);
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom-color: $primary;
+    }
+}
+
+.inputgroup {
+    position: relative;
+    margin-bottom: 16px;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        @extend %inputfield;
+    }
+
+    label {
+        padding: 0 8px;
+        color: $black;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+}

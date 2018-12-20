@@ -3,17 +3,20 @@ $assetsPath: '..';
 $white: #fff;
 $black: #000;
 $gray: #eee;
-$dark-10: darken($gray, 50%);
-$dark-20: darken($gray, 75%);
+$gray-dark: #c0c0c0;
 
 $primary: #f15a29;
+$primary-dark: #953718;
 $secondary: #0f4349;
+$secondary-dark: #071f22;
 
-$success: #29f189;
+$success: #23b10a;
+$error: #b10d02;
 
 $disabled: lighten($primary, 30%);
-$disabled-gray: lighten($dark-gray, 30%);
+$disabled-gray: lighten($gray, 30%);
 
 $z-index: 1000;
+$nav-z: $z-index + 1;
 
 $time: 0.3s;

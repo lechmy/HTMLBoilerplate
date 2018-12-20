@@ -1,13 +1,21 @@
-@import "./utility/_fonts.scss";
 @import "./utility/_variables.scss";
 @import "./utility/_mixins.scss";
-
-@import "./components/_checkbox.scss";
+@import "./utility/_helpers.scss";
+@import "./utility/_fonts.scss";
 
 @import "_layout.scss";
-@import "_header.scss";
-@import "_footer.scss";
 
-@import "utility/_helpers.scss";
+@import "./components/_header";
+@import "./components/_footer.scss";
+@import "./components/_checkbox.scss";
+@import "./components/_button.scss";
+@import "./components/_fileupload.scss";
+@import "./components/_inputfield.scss";
+@import "./components/_loader.scss";
+@import "./components/_validation.scss";
+
+@import "./pages/_example.scss";
+@import "./pages/_home.scss";
+@import "./pages/_404.scss";
 
 @import "_overrides.scss";
