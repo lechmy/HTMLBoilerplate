@@ -69,11 +69,6 @@ header{
             outline: none;
         }
         
-        &:focus:active {
-            background-color: $primary;
-            color: $white;
-        }
-        
         & > span {
             display: inline-block;
             vertical-align: middle;
@@ -86,7 +81,8 @@ header{
             height: 2px;
             width: 25px;
             background-color: $black;
-            
+            @include transition(all $time);
+
             &:after,
             &:before {
                 content: "";
@@ -109,16 +105,16 @@ header{
         
         &.active {
             & > .sign {
-                
+                background-color: transparent;
                 &:before {
-                    width: 60%;
-                    transform-origin: center $x;
+                    top: 0;
+                    transform-origin: center center;
                     transform: rotate(220deg);
                 }
                 
                 &:after {
-                    width: 60%;
-                    transform-origin: center (-$x + 2px);
+                    top: 0;
+                    transform-origin: center center;
                     transform: rotate(-220deg);
                 }
             }

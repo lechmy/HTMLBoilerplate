@@ -142,9 +142,6 @@ header {
         display: none; } }
     header .btn-menu:focus {
       outline: none; }
-    header .btn-menu:focus:active {
-      background-color: #f15a29;
-      color: #fff; }
     header .btn-menu > span {
       display: inline-block;
       vertical-align: middle; }
@@ -152,7 +149,11 @@ header {
       position: relative;
       height: 2px;
       width: 25px;
-      background-color: #000; }
+      background-color: #000;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
       header .btn-menu > .sign:after, header .btn-menu > .sign:before {
         content: "";
         position: absolute;
@@ -168,14 +169,16 @@ header {
         top: -8px; }
       header .btn-menu > .sign:after {
         top: 8px; }
-    header .btn-menu.active > .sign:before {
-      width: 60%;
-      transform-origin: center 8px;
-      transform: rotate(220deg); }
-    header .btn-menu.active > .sign:after {
-      width: 60%;
-      transform-origin: center -6px;
-      transform: rotate(-220deg); }
+    header .btn-menu.active > .sign {
+      background-color: transparent; }
+      header .btn-menu.active > .sign:before {
+        top: 0;
+        transform-origin: center center;
+        transform: rotate(220deg); }
+      header .btn-menu.active > .sign:after {
+        top: 0;
+        transform-origin: center center;
+        transform: rotate(-220deg); }
 
 footer {
   padding: 20px 0px;
