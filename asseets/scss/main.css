@@ -446,8 +446,7 @@ footer {
 
 .loader-container {
   position: relative;
-  min-height: 30px;
-  background-color: rgba(0, 0, 0, 0.1); }
+  min-height: 30px; }
 
 @keyframes rotate {
   0% {
