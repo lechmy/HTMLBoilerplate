@@ -1,0 +1,2 @@
+# Web workbench (sass)
+.sass-cache/
