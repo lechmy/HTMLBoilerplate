@@ -25,6 +25,7 @@
     $unit: 30px;
     position: relative;
     min-height: $unit;
+    background-color: rgba($black, 0.1);
 }
 
 @keyframes rotate{
